@@ -1,15 +1,15 @@
 
 # 用法
-ffmpeg -i hello.mp3 -acodec libfdk_aac hello.aac mp3转aac
-ffmpeg -i hello.aac -acodec libmp3lame hello.mp3 aac转mp3
-ffmpeg -i hello.aac -f s16le -ar 44100 -ac 1 -acodec pcm_s16le hello.pcm aac转pcm
-ffmpeg -f h264 -i hello.264 -vcodec libx264 hello.mp4 h264转mp4
-ffplay -ar 44100 -ac 1 -f s16le -i pcm16k.pcm 播放pcm
-ffmpeg -i input.mp4 -codec copy -bsf: h264_mp4toannexb -f h264 output.h264 mp4转264
--i input.mp4： 是输入的MP4文件
--codec copy： 从mp4中拷贝
--bsf: h264_mp4toannexb： 从mp4拷贝到annexB封装
--f h264： 采用h264格式
+ffmpeg -i hello.mp3 -acodec libfdk_aac hello.aac mp3转aac  
+ffmpeg -i hello.aac -acodec libmp3lame hello.mp3 aac转mp3  
+ffmpeg -i hello.aac -f s16le -ar 44100 -ac 1 -acodec pcm_s16le hello.pcm aac转pcm  
+ffmpeg -f h264 -i hello.264 -vcodec libx264 hello.mp4 h264转mp4  
+ffplay -ar 44100 -ac 1 -f s16le -i pcm16k.pcm 播放pcm  
+ffmpeg -i input.mp4 -codec copy -bsf: h264_mp4toannexb -f h264 output.h264 mp4转264  
+-i input.mp4： 是输入的MP4文件  
+-codec copy： 从mp4中拷贝  
+-bsf: h264_mp4toannexb： 从mp4拷贝到annexB封装  
+-f h264： 采用h264格式  
 
 
 # 通用选项
