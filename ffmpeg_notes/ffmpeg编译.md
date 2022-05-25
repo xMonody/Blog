@@ -1,5 +1,5 @@
 # <center>编译ffmpeg
-# 安装Msys2以及依赖
+## 安装Msys2以及依赖
 ```bash
 pacman -S mingw-w64-x86_64-nasm mingw-w64-x86_64-yasm mingw-w64-x86_64-cmake base-devel mingw-w64-x86_64-toolchain
 ```
@@ -21,7 +21,7 @@ libmp3lame： https://sourceforge.net/projects/lame/files/lame/3.100/
 ```bash
 --pkg-config-flags=--static --enable-gpl --enable-version3 --enable-shared --enable-static --enable-sdl2 --enable-libx264 --enable-libx265  --enable-parser=libx264 --enable-decoder=libx264 --enable-demuxer=libx264 --enable-encoder=libx264 --enable-muxer=libx264 --enable-parser=libx265 --enable-decoder=libx265 --enable-demuxer=libx265 --enable-encoder=libx265 --enable-muxer=libx265 --enable-libmp3lame --enable-libfdk-aac --enable-libmfx --enable-encoder=h264_qsv --enable-decoder=h264_qsv --enable-nonfree --enable-libvpx --enable-encoder=libvpx_vp8 --enable-encoder=libvpx_vp9 --enable-decoder=vp8 --enable-decoder=vp9 --enable-parser=vp8 --enable-parser=vp9 --enable-protocol=rtmp --enable-demuxer=rtmp --enable-muxer=rtmp --enable-protocol=rtsp --enable-demuxer=rtsp --enable-muxer=rtsp --enable-demuxer=flv --enable-muxer=flv --enable-muxer=mp4 --enable-demuxer=mp4 --enable-gcrypt --enable-gmp --enable-openssl --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldexeflags= --extra-ldexeflags=-static-libgcc --enable-lzma --enable-zlib --enable-bzlib
 ```
-##linux平台编译
+## linux平台编译
 ```bash
 ./configure --prefix=/usr/local/ffmpeg ---pkg-config-flags=--static -enable-gpl --enable-version3 --enable-shared --enable-static --enable-sdl2 --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libfdk-aac --enable-libmfx --enable-encoder=h264_qsv --enable-decoder=h264_qsv --enable-nonfree --enable-libvpx --enable-encoder=libvpx_vp8 --enable-encoder=libvpx_vp9 --enable-decoder=vp8 --enable-decoder=vp9 --enable-parser=vp8 --enable-parser=vp9 --enable-lzma --enable-zlib --enable-bzlib
 ```
