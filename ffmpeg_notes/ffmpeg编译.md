@@ -4,15 +4,15 @@
 pacman -S mingw-w64-x86_64-nasm mingw-w64-x86_64-yasm mingw-w64-x86_64-cmake base-devel mingw-w64-x86_64-toolchain
 ```
 ##依赖
-libfmx官网：  git clone https://github.com/lu-zero/mfx_dispatch.git
-libx264官网： git clone https://code.videolan.org/videolan/x264.git
-libx265官网   wget http://ftp.videolan.org/pub/videolan/x265/x265_3.2.tar.gz
-fdk-aac官网： git clone https://github.com/mstorsjo/fdk-aac.git
-libfaac官网： git clone https://github.com/Kiennh/libfaac.git
-libmp3lame： https://sourceforge.net/projects/lame/files/lame/3.100/
+libfmx官网：  git clone https://github.com/lu-zero/mfx_dispatch.git  
+libx264官网： git clone https://code.videolan.org/videolan/x264.git  
+libx265官网   wget http://ftp.videolan.org/pub/videolan/x265/x265_3.2.tar.gz  
+fdk-aac官网： git clone https://github.com/mstorsjo/fdk-aac.git  
+libfaac官网： git clone https://github.com/Kiennh/libfaac.git  
+libmp3lame： https://sourceforge.net/projects/lame/files/lame/3.100/  
 ##Msys2编译
- 如果是linux平台交叉编译需要指定运行平台目标平台编译器 --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32
- linux平台不用启用禁用下面的依赖 --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldexeflags= --extra-ldexeflags=-static-libgcc  --disable-lzma --disable-zlib --disable-bzlib 
+ 如果是linux平台交叉编译需要指定运行平台目标平台编译器 --cross-prefix=x86_64-w64-mingw32- --arch=x86_64 --target-os=mingw32  
+ linux平台不用启用禁用下面的依赖 --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldexeflags= --extra-ldexeflags=-static-libgcc --disable-lzma --disable-zlib --disable-bzlib 
 
 ```bash
 ./configure --prefix=D://ffmpeg --pkg-config-flags=--static --enable-gpl --enable-version3 --enable-shared --enable-static --enable-sdl2 --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libfdk-aac --enable-libmfx --enable-encoder=h264_qsv --enable-decoder=h264_qsv --enable-nonfree --enable-libvpx --enable-encoder=libvpx_vp8 --enable-encoder=libvpx_vp9 --enable-decoder=vp8 --enable-decoder=vp9 --enable-parser=vp8 --enable-parser=vp9 --extra-cflags=-DLIBTWOLAME_STATIC --extra-cxxflags= --extra-ldexeflags= --extra-ldexeflags=-static-libgcc  --disable-lzma --disable-zlib --disable-bzlib
