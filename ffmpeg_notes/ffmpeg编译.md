@@ -25,3 +25,15 @@ libmp3lame： https://sourceforge.net/projects/lame/files/lame/3.100/
 ```bash
 ./configure --prefix=/usr/local/ffmpeg ---pkg-config-flags=--static -enable-gpl --enable-version3 --enable-shared --enable-static --enable-sdl2 --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libfdk-aac --enable-libmfx --enable-encoder=h264_qsv --enable-decoder=h264_qsv --enable-nonfree --enable-libvpx --enable-encoder=libvpx_vp8 --enable-encoder=libvpx_vp9 --enable-decoder=vp8 --enable-decoder=vp9 --enable-parser=vp8 --enable-parser=vp9 --enable-lzma --enable-zlib --enable-bzlib
 ```
+emji表情包
+cpu 🧠👽︎👽
+电池 🔋
+内存 💿📀
+硬盘 💻
+联网 📡📞🛰
+充电 🔌
+日历 🗓︎
+时间 🕙️
+音量 🔔
+亮度 💡
+温度 🌡
