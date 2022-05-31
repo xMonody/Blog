@@ -1,7 +1,5 @@
 # opengl数学
 
-
-
 $$\begin{Bmatrix}
 {A_{x}}\\
 {A_{y}}\\
@@ -94,7 +92,7 @@ $$\begin{pmatrix}
 
 * 矩阵缩放
 
-$$\begin{pmatrix} 
+$\begin{pmatrix} 
 {X} * {T_{x}} \\
 {Y} * {T_{y}} \\
 {Z} * {T_{z}} \\
@@ -109,7 +107,7 @@ $$\begin{pmatrix}
 {Y}\\
 {Z}\\
 {1}\\
-\end{pmatrix}$$ 
+\end{pmatrix}$
 
 * 围绕X轴旋转rfa度
 
@@ -132,7 +130,7 @@ $$\begin{pmatrix}
 
 * 围绕Y旋转rfa度
 
-$$\begin{pmatrix} 
+$\begin{pmatrix} 
 {X}^{\prime}\\
 {Y}^{\prime}\\
 {Z}^{\prime}\\
@@ -147,11 +145,11 @@ $$\begin{pmatrix}
 {Y}\\
 {Z}\\
 {1}\\
-\end{pmatrix}$$ 
+\end{pmatrix}$
 
 围绕Z旋转rfa度
 
-$$\begin{pmatrix} 
+$\begin{pmatrix} 
 {X}^{\prime}\\
 {Y}^{\prime}\\
 {Z}^{\prime}\\
@@ -166,7 +164,7 @@ $$\begin{pmatrix}
 {Y}\\
 {Z}\\
 {1}\\
-\end{pmatrix}$$ 
+\end{pmatrix}$
 
 * 向量  
   $$V \bullet W = |\vec V||W|$$
@@ -193,9 +191,4 @@ av_free_packet-->av_read_frame
 avcode_decode_video2--否-->sws_freeContext
 sws_freeContext-->avcode_close
 avcode_close-->avformat_close_input
-
 ```
-
-
-
-  

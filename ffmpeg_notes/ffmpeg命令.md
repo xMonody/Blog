@@ -1,5 +1,5 @@
-
 # 用法
+
 ffmpeg -i hello.mp3 -acodec libfdk_aac hello.aac mp3转aac  
 ffmpeg -i hello.aac -acodec libmp3lame hello.mp3 aac转mp3  
 ffmpeg -i hello.aac -f s16le -ar 44100 -ac 1 -acodec pcm_s16le hello.pcm aac转pcm  
@@ -11,8 +11,8 @@ ffmpeg -i input.mp4 -codec copy -bsf: h264_mp4toannexb -f h264 output.h264 mp4�
 -bsf: h264_mp4toannexb： 从mp4拷贝到annexB封装  
 -f h264： 采用h264格式  
 
-
 # 通用选项
+
 -fromats 显示可用的格式，编解码的，协议的。。。
 
 -f fmt 强迫采用格式fmt
@@ -39,7 +39,9 @@ ffmpeg -i myfile.avi -target vcd /tmp/vcd.mpg
 -hq 激活高质量设置
 
 -itsoffset offset 设置以秒为基准的时间偏移，该选项影响所有后面的输入文件。该偏移被加到输入文件的时戳，定义一个正偏移意味着相应的流被延迟了 offset秒。 [-]hh:mm:ss[.xxx]的格式也支持
+
 # 视频选项
+
 -b bitrate 设置比特率，缺省200kb/s
 
 -r fps 设置帧频 缺省25
@@ -74,7 +76,9 @@ Sqcif 128X96 qcif 176X144 cif 252X288 4cif 704X576
 -pass n 选择处理遍数（1或者2）。两遍编码非常有用。第一遍生成统计信息，第二遍生成精确的请求的码率
 
 -passlogfile file 选择两遍的纪录文件名为file
+
 # 高级选项
+
 -g gop_size 设置图像组大小
 
 -intra 仅适用帧内编码
@@ -142,6 +146,7 @@ Sqcif 128X96 qcif 176X144 cif 252X288 4cif 704X576
 -vhook module 插入视频处理模块 module 包括了模块名和参数，用空格分开
 
 # 音频选项
+
 -ab bitrate 设置音频码率
 
 -ar freq 设置音频采样率
@@ -151,7 +156,9 @@ Sqcif 128X96 qcif 176X144 cif 252X288 4cif 704X576
 -an 不使能音频纪录
 
 -acodec codec 使用codec编解码
+
 # 捕获
+
 -vd device 设置视频捕获设备。比如/dev/video0
 
 -vc channel 设置视频捕获通道 DV1394专用
@@ -161,7 +168,9 @@ Sqcif 128X96 qcif 176X144 cif 252X288 4cif 704X576
 -dv1394 设置DV1394捕获
 
 -av device 设置音频设备 比如/dev/dsp
+
 # 高级选项
+
 -map file:stream 设置输入流映射
 
 -debug 打印特定调试信息
